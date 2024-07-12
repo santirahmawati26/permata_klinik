@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class klinik extends Model
+class Klinik extends Model
 {
     use HasFactory;
     /**
@@ -18,8 +18,5 @@ class klinik extends Model
         'alamat',
         'no_tlp',
         'riwayat_penyakit',
-
-
     ];
 }
-
