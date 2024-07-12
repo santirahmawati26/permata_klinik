@@ -30,7 +30,20 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('home') }}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('klinik.index') }}">Daftar Pasien</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('dokter.index') }}">Daftar Dokter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('konsultasi.index') }}">Daftar Konsultasi</a>
+                        </li>
+                        <!-- Tambahkan lebih banyak menu sesuai kebutuhan -->
                     </ul>
 
                     <!-- Right Side Of Navbar -->
