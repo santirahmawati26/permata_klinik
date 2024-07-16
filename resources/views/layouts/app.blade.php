@@ -30,20 +30,23 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
+                        @auth
+                            
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('home') }}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('klinik.index') }}">Daftar Pasien</a>
+                            <a class="nav-link" href="{{ route('klinik.index') }}">Data Pasien</a>
                         </li>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('dokter.index') }}">Daftar Dokter</a>
+                            <a class="nav-link" href="{{ route('dokter.index') }}">Tim Dokter</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('konsultasi.index') }}">Daftar Konsultasi</a>
+                            <a class="nav-link" href="{{ route('konsultasi.index') }}">Data Konsultasi</a>
                         </li>
-                        <!-- Tambahkan lebih banyak menu sesuai kebutuhan -->
+                        @endauth
+                        
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -86,7 +89,9 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')
+            <div class="container">
+                @yield('content')
+            </div>
         </main>
     </div>
 </body>

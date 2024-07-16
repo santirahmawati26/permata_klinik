@@ -1,6 +1,6 @@
-@extends('klinik.layout')
+@extends('layouts.app')
 
-@section('klinik')
+@section('content')
 <div class="container mt-5">
     <h2>Detail Pasien</h2>
 
